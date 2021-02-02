@@ -12,7 +12,6 @@ Input	Output
 import math
 
 def insert_shift_array(array, value):
-    # middle_index = (len(array)//2)
     middle_index = math.ceil(len(array)/2)
     end_piece = array[middle_index:len(array)]
     start_piece = array[0:middle_index]
@@ -20,6 +19,7 @@ def insert_shift_array(array, value):
     for item in end_piece:
         start_piece.append(item)
     print(start_piece)
+    return start_piece
     
 
 
